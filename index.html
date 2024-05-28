@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Neto Russo">
+  <title>Exercício 01 - JavaScript</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section class="questionario" aria-label="Questionarios" id="questionario">
+    <h1 class="questionarioTitulo">JavaScript Dia 01</h1>
+    <h2 class="questionarioSubtitulo">Exercício 01</h2>
+
+    <dl class="questionarioExercicio">
+
+      <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio01">Exercício 1.</a></dt>
+      <dd class="exercicioTexto">
+        Crie um trecho de código que calcula a média de 3 notas. Crie três variáveis para representar as três notas e
+        outra para guardar o resultado do cálculo;
+      </dd>
+      <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio02">Exercício 2.</a></dt>
+      <dd class="exercicioTexto">
+        Crie um trecho de código que calcula o IMC de uma pessoa. Crie uma variável para armazenar o peso em kg e uma
+        para armazenar a altura em metros. O cálculo do IMC é: PESO / ALTURA ^ 2;
+      </dd>
+      <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio03">Exercício 3.</a></dt>
+      <dd class="exercicioTexto">
+        Crie um trecho de código que lê a idade de uma pessoa e mostra o ano em que ela nasceu. O cálculo é ANO ATUAL -
+        IDADE inserida;
+      </dd>
+      <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio04">Exercício 4.</a></dt>
+      <dd class="exercicioTexto">
+        Crie um trecho de código que me diga quanto cobrar para vender um notebook usado: o seu custo foi R$3000, por
+        quanto devo vendê-lo descontando 25%?
+      </dd>
+      <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio05">Exercício 5.</a></dt>
+      <dd class="exercicioTexto">
+        Escreva um programa que leia um valor em metros e o exiba no console convertido em milímetros.
+      </dd>
+      <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio06">Exercício 6.</a></dt>
+      <dd class="exercicioTexto">
+        Escreva um programa que leia um valor de uma temperatura em CELSIUS e converte para FAHRENHEIT. O cálculo é:
+        CELSIUS * 1,8 + 32.
+      </dd>
+
+      <h3 class="questionarioSubtituloInterno">Exercícios Básicos:</h3>
+
+      <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio07">Exercício 07-Básico 01.Verificação de
+          Números:</a></dt>
+      <dd class="exercicioTexto">
+        - Crie um programa que verifica se um número é positivo, negativo ou zero.
+      </dd>
+
+      <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio08">Exercício 08-Básico 02.Verificação de Par ou
+          Ímpar:</a></dt>
+      <dd class="exercicioTexto">
+        - Escreva um programa que determina se um número é par ou ímpar.
+      </dd>
+
+      <!-- <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio09">Exercício 09-Básico 03.Calculadora Simples:</a>
+      </dt>
+      <dd class="exercicioTexto">
+        - Implemente uma calculadora que recebe dois números e uma operação (adição, subtração,
+        multiplicação, divisão) e retorna o resultado.
+      </dd>
+
+      <h3 class="questionarioSubtituloInterno">Exercícios Intermediários:</h3>
+
+      <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio10">Intermediário 04.Idade e Categoria:</a></dt>
+      <dd class="exercicioTexto">
+        - Crie um programa que determina a categoria de uma pessoa baseada na idade (criança, adolescente, adulto,
+        idoso).
+      </dd>
+
+      <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio11">Intermediário 5.Conversor de Notas:</a></dt>
+      <dd class="exercicioTexto">
+        - Escreva um programa que converte notas numéricas em conceitos (A, B, C, D, F) baseado em um sistema de
+        pontuação.
+      </dd>
+
+      <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio12">Intermediário 6.Cálculo de Desconto:</a></dt>
+      <dd class="exercicioTexto">
+        - Desenvolva um programa que calcula o valor final após aplicar um desconto a um determinado preço.
+      </dd>
+
+      <h3 class="questionarioSubtituloInterno">Exercícios Avançados:</h3>
+
+      <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio13">Avançado 7.Validação de Triângulo:</a></dt>
+      <dd class="exercicioTexto">
+        - Crie um programa que verifica se três segmentos formam um triângulo e, se sim, determina seu tipo (equilátero,
+        isósceles, escaleno).
+      </dd>
+
+      <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio14">Avançado 8.Verificador de Ano Bissexto:</a>
+      </dt>
+      <dd class="exercicioTexto">
+        - Implemente um programa que verifica se um ano é bissexto ou não.
+      </dd>
+
+      <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio15">Avançado 9. Jogo de Adivinhação:</a></dt>
+      <dd class="exercicioTexto">
+        - Crie um jogo onde o programa escolhe um número aleatório e o jogador tem que adivinhar qual é. O programa deve
+        fornecer dicas se o número fornecido é maior ou menor.
+      </dd>
+
+      <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio16">Avançado 10. Simulador de Empréstimo:</a></dt>
+      <dd class="exercicioTexto">
+        - Desenvolva um programa que simula um sistema de empréstimo, determinando se um cliente é elegível com base na
+        renda, idade e histórico de crédito.
+      </dd> -->
+      <hr class="detalheInicio">
+    </dl>
+  </section>
+
+  <section class="solucao" aria-label="Resolução dos exercícios">
+
+    <div id="exercicio01" class="exercicioBox exercicio01">
+
+      <h2 class="tituloExercicio exercicio01Titulo">Exercicio 01</h2>
+
+      <div class="exercicio01Conteudo">
+        <form id="exercicio01Form" class="exercicio01Form">
+          <label for="nota01" class="exercicioLabel exercicio01Label">Nota 01</label>
+          <input type="text" name="nota01" id="nota01" class="exercicio01Input inputNota01" placeholder="Digite a nota">
+
+          <label for="nota02" class="exercicioLabel exercicio01Label">Nota 02</label>
+          <input type="text" name="nota02" id="nota02" class="exercicio01Input inputNota02" placeholder="Digite a nota">
+
+          <label for="nota03" class="exercicioLabel exercicio01Label">Nota 03</label>
+          <input type="text" name="nota03" id="nota03" class="exercicio01Input inputNota03" placeholder="Digite a nota">
+
+          <button type="button" id="exercicio01FormBtn" class="exercicio01FormBtn">Calcular</button>
+        </form>
+        <div class="resultado01Textos">
+          <h3 class="resultadoTitulo resultado01Titulo">Média das Notas</h3>
+          <p id="exercicio01resultado" class="exercicioResultado exercicio01resultado"></p>
+        </div>
+      </div>
+      <a href="#questionario">⬆️</a>
+    </div>
+
+    <div id="exercicio02" class="exercicioBox exercicio02">
+
+      <h2 class="tituloExercicio exercicio02Titulo">Exercicio 02</h2>
+
+      <div class="exercicio02Conteudo">
+        <form id="exercicio02Form" class="exercicio02Form">
+
+          <label for="peso" class="exercicioLabel exercicio02Label">Seu peso em KG<br />(Use "." ao invés de
+            ",")</label>
+          <input type="text" name="peso" id="exercicio02Peso" class="exercicio02Input inputPeso"
+            placeholder="Digite o seu peso">
+
+          <label for="altura" class="exercicioLabel exercicio02Label">Sua altura em Metros<br />(Use "." ao invés de
+            ",")</label>
+          <input type="text" name="altura" id="exercicio02Altura" class="exercicio02Input inputAltura"
+            placeholder="Digite o seu altura">
+
+          <button type="button" id="exercicio02FormBtn" class="exercicio02FormBtn">Calcular</button>
+        </form>
+        <div class="resultado02Textos">
+          <h3 class="resultadoTitulo resultado02Titulo">Seu Imc é:</h3>
+          <p id="exercicio02resultado" class="exercicioResultado exercicio01resultado"></p>
+        </div>
+      </div>
+      <p class="descleamerExercicio02">**O IMC é apenas um indicador geral e não deve ser usado como único critério para
+        diagnosticar problemas de saúde relacionados ao peso.</p>
+      <a href="#questionario">⬆️</a>
+    </div>
+
+    <div id="exercicio03" class="exercicioBox exercicio03">
+
+      <h2 class="tituloExercicio exercicio03Titulo">Exercicio 03</h2>
+
+      <div class="exercicio03Conteudo">
+        <form id="exercicio03Form" class="exercicio03Form">
+
+          <label for="idade" class="exercicioLabel exercicio03Label">Quantos anos ?</label>
+          <input type="number" name="idade" id="exercicio03idade" class="exercicio03Input inputIdade"
+            placeholder="Digite a sua idade">
+
+          <label for="aniversario" id="exercicio03LabelIdade" class="exercicioLabel exercicio03Label">Já fez aniversário
+            esse ano?</label>
+          <div class="exercicio03RadioButtons">
+            <input type="radio" name="aniversario" id="aniversarioSim" value="sim" checked required>
+            <label for="aniversarioSim" class="exercicio03LabelInterno">Sim</label>
+
+            <input type="radio" name="aniversario" id="aniversarioNao" value="nao" required>
+            <label for="aniversarioNao" class="exercicio03LabelInterno">Não</label>
+          </div>
+
+          <button type="button" id="exercicio03FormBtn" class="exercicio03FormBtn">Calcular</button>
+        </form>
+        <div class="resultado03Textos">
+          <h3 class="resultadoTitulo resultado03Titulo">Você nasceu no ano: </h3>
+          <p id="exercicio03resultado" class="exercicioResultado exercicio03resultado"></p>
+        </div>
+      </div>
+      <a href="#questionario">⬆️</a>
+    </div>
+
+    <div id="exercicio04" class="exercicioBox exercicio04">
+
+      <h2 class="tituloExercicio exercicio04Titulo">Exercicio 04</h2>
+
+      <div class="exercicio04Conteudo">
+        <form id="exercicio04Form" class="exercicio04Form">
+
+          <label for="precoProduto" class="exercicioLabel exercicio04Label">Qual o preço bruto?<br /> (Utilize '.' ao
+            invés de ',') </label>
+          <input type="number" name="precoProduto" id="exercicio04produto" class="exercicio04Input inputProduto"
+            placeholder="Digite o preço bruto">
+
+          <label for="desconto" class="exercicioLabel exercicio04Label">Qual o desconto em %?<br /> (Utilize '.' ao
+            invés de ',') </label>
+          <input type="number" name="desconto" id="exercicio04desconto" class="exercicio04Input inputDesconto"
+            placeholder="Digite o preço bruto">
+
+          <button type="button" id="exercicio04FormBtn" class="exercicio04FormBtn">Calcular</button>
+        </form>
+
+        <div class="resultado04Textos">
+          <h3 class="resultadoTitulo resultado04Titulo">Venda por: </h3>
+          <p id="exercicio04resultado" class="exercicioResultado exercicio04resultado"></p>
+        </div>
+      </div>
+      <a href="#questionario">⬆️</a>
+    </div>
+
+    <div id="exercicio05" class="exercicioBox exercicio05">
+
+      <h2 class="tituloExercicio exercicio05Titulo">Exercicio 05</h2>
+
+      <div class="exercicio05Conteudo">
+        <form id="exercicio05Form" class="exercicio05Form">
+
+          <label for="medidaMetros" class="exercicioLabel exercicio05Label">Qual a medida em Metros?<br /> (Utilize
+            '.'ao invés de ',') </label>
+          <input type="number" name="medidaMetros" id="exercicio05Metros" class="exercicio05Input inputMetros"
+            placeholder="Digite a medida em metros">
+
+          <button type="button" id="exercicio05FormBtn" class="exercicio05FormBtn">Converter</button>
+        </form>
+
+        <div class="resultado05Textos">
+          <h3 class="resultadoTitulo resultado05Titulo">resultado: </h3>
+          <p id="exercicio05resultado" class="exercicioResultado exercicio05resultado"></p>
+        </div>
+      </div>
+      <a href="#questionario">⬆️</a>
+    </div>
+
+    <div id="exercicio06" class="exercicioBox exercicio06">
+
+      <h2 class="tituloExercicio exercicio06Titulo">Exercicio 06</h2>
+
+      <div class="exercicio06Conteudo">
+        <form id="exercicio06Form" class="exercicio06Form">
+
+          <label for="temperaturaCelcius" class="exercicioLabel exercicio06Label">Qual a Temperatura em Celsius?<br />
+            (Utilize '.'ao invés de ',') </label>
+          <input type="number" name="temperaturaCelcius" id="exercicio06Celcius" class="exercicio06Input inputCelcius"
+            placeholder="Digite a temperatura em Celcius">
+
+          <button type="button" id="exercicio06FormBtn" class="exercicio06FormBtn">Converter</button>
+        </form>
+
+        <div class="resultado06Textos">
+          <h3 class="resultadoTitulo resultado06Titulo">resultado: </h3>
+          <p id="exercicio06resultado" class="exercicioResultado exercicio06resultado"></p>
+        </div>
+      </div>
+      <a href="#questionario">⬆️</a>
+    </div>
+
+    <div id="exercicio07" class="exercicioBox exercicio07">
+
+      <h2 class="tituloExercicio exercicio07Titulo">Exercício 07-Básico 01 Verificação de Números:</h2>
+
+      <div class="exercicio07Conteudo">
+        <form id="exercicio07Form" class="exercicio07Form">
+
+          <label for="numeroVerificar" class="exercicioLabel exercicio07Label">Qual Número? </label>
+          <input type="texto" name="numeroVerificar" id="exercicio07Numero" class="exercicio07Input inputNumero"
+            placeholder="Digite um número">
+
+          <button type="button" id="exercicio07FormBtn" class="exercicio07FormBtn">Verificar</button>
+        </form>
+
+        <div class="resultado07Textos">
+          <h3 class="resultadoTitulo resultado07Titulo">resultado: </h3>
+          <p id="exercicio07resultado" class="exercicioResultado exercicio07resultado"></p>
+        </div>
+      </div>
+      <a href="#questionario">⬆️</a>
+    </div>
+
+    <div id="exercicio08" class="exercicioBox exercicio08">
+
+      <h2 class="tituloExercicio exercicio08Titulo">Exercício 08-Básico 02.Verificação de Par ou Ímpar:</h2>
+
+      <div class="exercicio08Conteudo">
+        <form id="exercicio08Form" class="exercicio08Form">
+
+          <label for="numeroVerificar" class="exercicioLabel exercicio08Label">Qual Número? </label>
+          <input type="texto" name="numeroVerificar" id="exercicio08Numero" class="exercicio08Input inputNumero"
+            placeholder="Digite um número">
+
+          <button type="button" id="exercicio08FormBtn" class="exercicio08FormBtn">Verificar</button>
+        </form>
+
+        <div class="resultado08Textos">
+          <h3 class="resultadoTitulo resultado08Titulo">resultado: </h3>
+          <p id="exercicio08resultado" class="exercicioResultado exercicio08resultado"></p>
+        </div>
+      </div>
+      <a href="#questionario">⬆️</a>
+    </div>
+
+    <!-- <div id="exercicio09" class="exercicioBox exercicio09">
+
+      <h2 class="tituloExercicio exercicio09Titulo">Exercício 09-Básico 03.Calculadora Simples:</h2> -->
+
+
+
+      <!-- <div class="exercicio09Conteudo">
+        <form id="exercicio09Form" class="exercicio09Form">
+
+          <label for="numeroCalcular01" class="exercicioLabel exercicio09Label">Qual Número? </label>
+          <input type="texto" name="numeroCalcular01" id="exercicio09Numero01" class="exercicio09Input inputNumero" placeholder="Digite um número">
+
+          <select name="operador" id="operadorCalcular">
+            <option value="default">Escolha o operador</option>
+            <option value="+">Somar (+)</option>
+            <option value="-">Subtrair (-)</option>
+            <option value="/">Dividir (/)</option>
+            <option value="*">Multiplicar (*)</option>
+          </select>
+
+          <label for="numeroCalcular02" class="exercicioLabel exercicio09Label">Qual Número? </label>
+          <input type="texto" name="numeroCalcular02" id="exercicio09Numero01" class="exercicio09Input inputNumero" placeholder="Digite um número">
+
+          <button type="button" id="exercicio09FormBtn" class="exercicio09FormBtn">Verificar</button>
+        </form>
+
+        <div class="resultado09Textos">
+          <h3 class="resultadoTitulo resultado09Titulo">O resultado é: </h3>
+          <p id="exercicio09resultado" class="exercicioResultado exercicio09resultado"></p>
+        </div>
+      </div>
+      <a href="#questionario">⬆️</a>
+    </div> -->
+
+
+  </section>
+
+  <script src="./exercicio01.js"></script>
+  <script src="./exercicio02.js"></script>
+  <script src="./exercicio03.js"></script>
+  <script src="./exercicio04.js"></script>
+  <script src="./exercicio05.js"></script>
+  <script src="./exercicio06.js"></script>
+  <script src="./exercicio07.js"></script>
+  <script src="./exercicio08.js"></script>
+  <!-- <script src="./exercicio09.js"></script> -->
+
+</body>
+
+</html>

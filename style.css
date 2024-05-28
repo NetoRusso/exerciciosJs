@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --font-padrao: "Roboto", sans-serif;
+  --cor-bg: #ffe1bd;
+  --cor-medio: #ebb97c;
+  --cor-destaque: #cb8026;
+  --cor-dark: #232533;
+  --cor-escura: #393b47;
+
+  --titulo-1: clamp(1.5rem, 1.3846rem + 0.5128vw, 2rem);
+  --titulo-2: clamp(1.25rem, 1.1346rem + 0.5128vw, 1.75rem);
+  --titulo-3: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
+  --texto-1: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
+  --texto-2: clamp(0.875rem, 0.7885rem + 0.3846vw, 1.25rem);
+  --texto-3: clamp(0.75rem, 0.6923rem + 0.2564vw, 1rem);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  max-width: 100vw;
+  min-width: 360px;
+  height: auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: var(--font-padrao);
+}
+
+body {
+  width: 100%;
+  background-color: var(--cor-bg);
+}
+
+.questionario {
+  width: 80%;
+  min-width: 320px;
+  margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.questionarioTitulo {
+  font-size: var(--titulo-1);
+  font-weight: 800;
+  color: var(--cor-dark);
+}
+
+.questionarioSubtitulo {
+  font-style: var(--titulo-2);
+  font-weight: 600;
+  color: var(--cor-escura);
+}
+
+.questionarioExercicio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.linkVer {
+  text-decoration: none;
+  font-size: var(--texto-2);
+  font-weight: 600;
+  padding: 5px 10px;
+  background-color: var(--cor-dark);
+  color: var(--cor-bg);
+  border-radius: 50px;
+  margin: 8px 0;
+  box-shadow: inset 3px 3px 5px 5px var(--cor-dark), -5px 5px 5px 2px var(--cor-escura);
+}
+
+.linkVer:hover {
+  scale: 0.9;
+  box-shadow: -2px 2px 3px 0px var(--cor-escura);
+  transition: all 200ms ease-in-out;
+}
+
+.exercicioTexto {
+  font-size: var(--texto-2);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.questionarioSubtituloInterno {
+  font-size: var(--titulo-2);
+  font-weight: 600;
+  color: var(--cor-escura);
+  margin: 16px 0;
+}
+
+.detalheInicio {
+  width: 100%;
+  height: 5px;
+  background-color: #cb8026;
+  border-radius: 50px;
+  margin: 16px 0;
+}
+
+.solucao{
+  width: 80%;
+  min-width: 320px;
+  margin: 32px auto;
+}
+
+.tituloExercicio {
+  font-size: var(--titulo-2);
+  font-weight: 600;
+  color: var(--cor-escura);
+}
+
+.exercicioBox{
+  width: 100%;
+  min-height: 50vh;
+  padding: 50px;
+  border: double 5px var(--cor-destaque);
+  margin: 32px auto;
+}
+
+.exercicioLabel {
+  font-size: 16px;
+  color: var(--cor-dark);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.resultadoTitulo {
+  font-size: 16px;
+  color: var(--cor-escura);
+  font-weight: 600;
+}
+
+.exercicioResultado {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--cor-dark);
+}
+
+/* Exercício 01 */
+
+.exercicio01 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+
+}
+
+.exercicio01Form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+}
+
+.exercicio01Input {
+  width: 120px;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cor-escura);
+  border: solid 3px var(--cor-dark);
+  border-radius: 50px;
+  margin: 8px 0;
+  box-shadow: -5px 5px 0 0 var(--cor-dark);
+  outline: none;
+}
+
+.exercicio01Input::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cor-escura);
+}
+
+.exercicio01Input:focus {
+  box-shadow: -3px 3px 0 0 var(--cor-destaque);
+  border: solid 3px var(--cor-destaque);
+}
+
+.exercicio01FormBtn {
+  margin: 16px 0;
+  border: 0;
+  padding: 10px 20px;
+  background-color: var(--cor-dark);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cor-bg);
+  border-radius: 50px;
+  box-shadow: -5px 5px 0 0 var(--cor-escura);
+}
+
+.exercicio01FormBtn:hover {
+  cursor: pointer;
+  scale: 0.9;
+  box-shadow: none;
+  transition: all 200ms ease-in-out;
+}
+
+.exercicio01Conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+  gap: 50px;
+  width: 100%;
+}
+
+.resultado01Textos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+
+/* Exercicio 02 */
+
+.exercicio02 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+}
+
+.exercicio02Conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+  gap: 50px;
+  width: 100%;
+}
+
+.exercicio02Form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+}
+
+.exercicio02Label {
+  width: 200px;
+  
+}
+
+.exercicio02Input {
+  margin: 16px 0;
+  width: 180px;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cor-escura);
+  border: solid 3px var(--cor-dark);
+  border-radius: 50px;
+  margin: 8px 0;
+  box-shadow: -5px 5px 0 0 var(--cor-dark);
+  outline: none;
+}
+
+.exercicio02Input::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cor-escura);
+}
+
+.exercicio02Input:focus {
+  box-shadow: -3px 3px 0 0 var(--cor-destaque);
+  border: solid 3px var(--cor-destaque);
+}
+
+.exercicio02FormBtn {
+  margin: 16px 0;
+  border: 0;
+  padding: 10px 20px;
+  background-color: var(--cor-dark);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cor-bg);
+  border-radius: 50px;
+  box-shadow: -5px 5px 0 0 var(--cor-escura);
+}
+
+.exercicio02FormBtn:hover {
+  cursor: pointer;
+  scale: 0.9;
+  box-shadow: none;
+  transition: all 200ms ease-in-out;
+}
+
+.descleamerExercicio02 {
+  width: auto;
+  max-width: 300px;
+  font-size: 12px;
+}
+
+/* Exercicio 03 */
+
+.exercicio03Conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+  gap: 50px;
+  width: 100%;
+}
+
+.exercicio03Form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+}
+
+.exercicio03Input {
+  margin: 16px 0;
+  width: 180px;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cor-escura);
+  border: solid 3px var(--cor-dark);
+  border-radius: 50px;
+  margin: 8px 0;
+  box-shadow: -5px 5px 0 0 var(--cor-dark);
+  outline: none;
+}
+
+.exercicio03Input::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cor-escura);
+}
+
+.exercicio03Input:focus {
+  box-shadow: -3px 3px 0 0 var(--cor-destaque);
+  border: solid 3px var(--cor-destaque);
+}
+
+.exercicio03FormBtn {
+  margin: 16px 0;
+  border: 0;
+  padding: 10px 20px;
+  background-color: var(--cor-dark);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cor-bg);
+  border-radius: 50px;
+  box-shadow: -5px 5px 0 0 var(--cor-escura);
+}
+
+.exercicio03FormBtn:hover {
+  cursor: pointer;
+  scale: 0.9;
+  box-shadow: none;
+  transition: all 200ms ease-in-out;
+}
+
+/* Exercio 04 */
+
+.exercicio04Conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+  gap: 50px;
+  width: 100%;
+}
+
+.exercicio04Form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+}
+
+.exercicio04Input {
+  margin: 16px 0;
+  width: 180px;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cor-escura);
+  border: solid 3px var(--cor-dark);
+  border-radius: 50px;
+  margin: 8px 0;
+  box-shadow: -5px 5px 0 0 var(--cor-dark);
+  outline: none;
+}
+
+.exercicio04Input::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cor-escura);
+}
+
+.exercicio04Input:focus {
+  box-shadow: -3px 3px 0 0 var(--cor-destaque);
+  border: solid 3px var(--cor-destaque);
+}
+
+.exercicio04FormBtn {
+  margin: 16px 0;
+  border: 0;
+  padding: 10px 20px;
+  background-color: var(--cor-dark);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cor-bg);
+  border-radius: 50px;
+  box-shadow: -5px 5px 0 0 var(--cor-escura);
+}
+
+.exercicio04FormBtn:hover {
+  cursor: pointer;
+  scale: 0.9;
+  box-shadow: none;
+  transition: all 200ms ease-in-out;
+}
+
+/* Exercicio 05 */
+
+.exercicio05Conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+  gap: 50px;
+  width: 100%;
+}
+
+.exercicio05Form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+}
+
+.exercicio05Input {
+  margin: 16px 0;
+  width: 190px;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cor-escura);
+  border: solid 3px var(--cor-dark);
+  border-radius: 50px;
+  margin: 8px 0;
+  box-shadow: -5px 5px 0 0 var(--cor-dark);
+  outline: none;
+}
+
+.exercicio05Input::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cor-escura);
+}
+
+.exercicio05Input:focus {
+  box-shadow: -3px 3px 0 0 var(--cor-destaque);
+  border: solid 3px var(--cor-destaque);
+}
+
+.exercicio05FormBtn {
+  margin: 16px 0;
+  border: 0;
+  padding: 10px 20px;
+  background-color: var(--cor-dark);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cor-bg);
+  border-radius: 50px;
+  box-shadow: -5px 5px 0 0 var(--cor-escura);
+}
+
+.exercicio05FormBtn:hover {
+  cursor: pointer;
+  scale: 0.9;
+  box-shadow: none;
+  transition: all 200ms ease-in-out;
+}
+
+/* Exercicio 06*/
+
+.exercicio06Conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+  gap: 50px;
+  width: 100%;
+}
+
+.exercicio06Form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+}
+
+.exercicio06Input {
+  margin: 16px 0;
+  width: 210px;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cor-escura);
+  border: solid 3px var(--cor-dark);
+  border-radius: 50px;
+  margin: 8px 0;
+  box-shadow: -5px 5px 0 0 var(--cor-dark);
+  outline: none;
+}
+
+.exercicio06Input::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cor-escura);
+}
+
+.exercicio06Input:focus {
+  box-shadow: -3px 3px 0 0 var(--cor-destaque);
+  border: solid 3px var(--cor-destaque);
+}
+
+.exercicio06FormBtn {
+  margin: 16px 0;
+  border: 0;
+  padding: 10px 20px;
+  background-color: var(--cor-dark);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cor-bg);
+  border-radius: 50px;
+  box-shadow: -5px 5px 0 0 var(--cor-escura);
+}
+
+.exercicio06FormBtn:hover {
+  cursor: pointer;
+  scale: 0.9;
+  box-shadow: none;
+  transition: all 200ms ease-in-out;
+}
+
+/* Exercicio 07 */
+
+.exercicio07Conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+  gap: 50px;
+  width: 100%;
+}
+
+.exercicio07Form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+}
+
+.exercicio07Input {
+  margin: 16px 0;
+  width: 210px;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cor-escura);
+  border: solid 3px var(--cor-dark);
+  border-radius: 50px;
+  margin: 8px 0;
+  box-shadow: -5px 5px 0 0 var(--cor-dark);
+  outline: none;
+}
+
+.exercicio07Input::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cor-escura);
+}
+
+.exercicio07Input:focus {
+  box-shadow: -3px 3px 0 0 var(--cor-destaque);
+  border: solid 3px var(--cor-destaque);
+}
+
+.exercicio07FormBtn {
+  margin: 16px 0;
+  border: 0;
+  padding: 10px 20px;
+  background-color: var(--cor-dark);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cor-bg);
+  border-radius: 50px;
+  box-shadow: -5px 5px 0 0 var(--cor-escura);
+}
+
+.exercicio07FormBtn:hover {
+  cursor: pointer;
+  scale: 0.9;
+  box-shadow: none;
+  transition: all 200ms ease-in-out;
+}
+
+/* Exercício 08*/
+
+.exercicio08Conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+  gap: 50px;
+  width: 100%;
+}
+
+.exercicio08Form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+}
+
+.exercicio08Input {
+  margin: 16px 0;
+  width: 210px;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cor-escura);
+  border: solid 3px var(--cor-dark);
+  border-radius: 50px;
+  margin: 8px 0;
+  box-shadow: -5px 5px 0 0 var(--cor-dark);
+  outline: none;
+}
+
+.exercicio08Input::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cor-escura);
+}
+
+.exercicio08Input:focus {
+  box-shadow: -3px 3px 0 0 var(--cor-destaque);
+  border: solid 3px var(--cor-destaque);
+}
+
+.exercicio08FormBtn {
+  margin: 16px 0;
+  border: 0;
+  padding: 10px 20px;
+  background-color: var(--cor-dark);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cor-bg);
+  border-radius: 50px;
+  box-shadow: -5px 5px 0 0 var(--cor-escura);
+}
+
+.exercicio08FormBtn:hover {
+  cursor: pointer;
+  scale: 0.9;
+  box-shadow: none;
+  transition: all 200ms ease-in-out;
+}
