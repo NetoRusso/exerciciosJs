@@ -33,6 +33,7 @@ btnExercicio01.addEventListener("click", function (e) {
   }
 
   const media = (nota01 + nota02 + nota03) / 3;
+  console.log(media);
 
   resultadoExercicio01.textContent = media.toFixed(2);
   formularioExercicio01.reset();
