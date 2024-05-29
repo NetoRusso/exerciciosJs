@@ -7,7 +7,7 @@
 
     CPF Valido. => Trava no envio; OK
     Idade > 21 anos && Idade < 70 anos; OK
-    (rendaBruta * 30%) > valorSolicitado/6;
+    (rendaBruta * 30%) > valorSolicitado/12;
 
 */
 
