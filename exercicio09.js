@@ -20,33 +20,34 @@ btnExercicio09.addEventListener("click", (e) => {
   let numero02Exercicio09 = parseFloat(numero02Exercicio09Input.value);
   let resultado;
 
-  console.log(operador);
 
-  // switch (operadorEscolido) {
-  //   case "+":
-  //     return resultado = (numero01Exercicio09 + numero02Exercicio09);
 
-  //     break;
+  switch (operadorEscolido) {
+    case "somar":
+      resultado = (numero01Exercicio09 + numero02Exercicio09);
 
-  //   case "-":
-  //     return resultado = (numero01Exercicio09 - numero02Exercicio09);
+      break;
 
-  //     break;
+    case "subtrair":
+      resultado = (numero01Exercicio09 - numero02Exercicio09);
 
-  //   case "*":
-  //     return resultado = (numero01Exercicio09 * numero02Exercicio09);
+      break;
 
-  //     break;
+    case "mutiplicar":
+      resultado = (numero01Exercicio09 * numero02Exercicio09);
 
-  //   case "/":
-  //     return resultado = (numero01Exercicio09 / numero02Exercicio09);
+      break;
 
-  //     break;
+    case "dividir":
+      resultado = (numero01Exercicio09 / numero02Exercicio09);
 
-  //     default:
-  //       return resultado = ("Porfavor escolha um operador");
-  // }
+      break;
+
+    default:
+      return resultado = ("Porfavor escolha um operador");
+  }
 
 
   resultadoExercicio09.textContent = resultado;
+  formularioExercicio09.reset();
 })
