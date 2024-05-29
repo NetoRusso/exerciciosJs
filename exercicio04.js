@@ -4,7 +4,7 @@ Crie um trecho de código que me diga quanto cobrar para vender um notebook usad
 
 console.log("Exercicio 04 OK")
 
-const precoProdutoInput = document.getElementById('exercicio04produto');
+const notebook = 3000;
 const descontoInput = document.getElementById("exercicio04desconto");
 const formularioExercicio04 = document.getElementById("exercicio04Form");
 const btnExercicio04 = document.getElementById("exercicio04FormBtn");
@@ -14,20 +14,8 @@ const resultadoExercicio04 = document.getElementById("exercicio04resultado");
 btnExercicio04.addEventListener("click", (e) => {
   e.preventDefault();
 
-  let precoProduto;
-  let desconto;
-
-  try {
-    precoProduto = parseFloat(precoProdutoInput.value);
-    desconto = parseFloat(descontoInput.value);
-
-    if (isNaN(precoProduto) || isNaN(desconto)) {
-      throw new Error("Erro na digitação: Digite valores validos");
-    }
-  } catch {
-    resultadoExercicio04.textContent = erro.message;
-    return;
-  }
+  let precoProduto = parseFloat(notebook);
+  let desconto = parseFloat(descontoInput.value);
 
   const descontoReal = 1 - (desconto / 100);
 
