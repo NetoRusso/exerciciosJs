@@ -122,6 +122,18 @@ body {
   padding: 50px;
   border: double 5px var(--cor-destaque);
   margin: 32px auto;
+  position: relative;
+}
+
+.exercicioConteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 8px auto;
+  gap: 50px;
+  width: 100%;
 }
 
 .exercicioLabel {
@@ -143,26 +155,22 @@ body {
   color: var(--cor-dark);
 }
 
-/* Exercício 01 */
-
-.exercicio01 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 16px;
-
+.linkVoltar {
+  position: absolute;
+  bottom: 5px;
 }
 
-.exercicio01Form {
+.exercicioForm {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-self: center;
+  margin: 16px 0;
 }
 
-.exercicio01Input {
-  width: 120px;
+.exercicioInput{
+  margin: 16px 0;
+  width: 210px;
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
@@ -175,18 +183,18 @@ body {
   outline: none;
 }
 
-.exercicio01Input::placeholder {
+.exercicioInput::placeholder {
   font-size: 12px;
   font-weight: 500;
   color: var(--cor-escura);
 }
 
-.exercicio01Input:focus {
+.exercicioInput:focus {
   box-shadow: -3px 3px 0 0 var(--cor-destaque);
   border: solid 3px var(--cor-destaque);
 }
 
-.exercicio01FormBtn {
+.exercicioFormBtn {
   margin: 16px 0;
   border: 0;
   padding: 10px 20px;
@@ -198,109 +206,24 @@ body {
   box-shadow: -5px 5px 0 0 var(--cor-escura);
 }
 
-.exercicio01FormBtn:hover {
+
+.exercicioFormBtn:hover {
   cursor: pointer;
   scale: 0.9;
   box-shadow: none;
   transition: all 200ms ease-in-out;
 }
 
-.exercicio01Conteudo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 300px;
-  margin: 0 auto;
-  gap: 50px;
-  width: 100%;
-}
-
-.resultado01Textos {
+.resultadoTextos {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
 }
 
+/* Exercício 01 */
 
 /* Exercicio 02 */
-
-.exercicio02 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 16px;
-}
-
-.exercicio02Conteudo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 300px;
-  margin: 0 auto;
-  gap: 50px;
-  width: 100%;
-}
-
-.exercicio02Form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: center;
-}
-
-.exercicio02Label {
-  width: 200px;
-  
-}
-
-.exercicio02Input {
-  margin: 16px 0;
-  width: 180px;
-  height: 30px;
-  padding: 5px 10px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--cor-escura);
-  border: solid 3px var(--cor-dark);
-  border-radius: 50px;
-  margin: 8px 0;
-  box-shadow: -5px 5px 0 0 var(--cor-dark);
-  outline: none;
-}
-
-.exercicio02Input::placeholder {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--cor-escura);
-}
-
-.exercicio02Input:focus {
-  box-shadow: -3px 3px 0 0 var(--cor-destaque);
-  border: solid 3px var(--cor-destaque);
-}
-
-.exercicio02FormBtn {
-  margin: 16px 0;
-  border: 0;
-  padding: 10px 20px;
-  background-color: var(--cor-dark);
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--cor-bg);
-  border-radius: 50px;
-  box-shadow: -5px 5px 0 0 var(--cor-escura);
-}
-
-.exercicio02FormBtn:hover {
-  cursor: pointer;
-  scale: 0.9;
-  box-shadow: none;
-  transition: all 200ms ease-in-out;
-}
 
 .descleamerExercicio02 {
   width: auto;
@@ -310,390 +233,49 @@ body {
 
 /* Exercicio 03 */
 
-.exercicio03Conteudo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 300px;
-  margin: 0 auto;
-  gap: 50px;
-  width: 100%;
-}
-
-.exercicio03Form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: center;
-}
-
-.exercicio03Input {
-  margin: 16px 0;
-  width: 180px;
-  height: 30px;
-  padding: 5px 10px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--cor-escura);
-  border: solid 3px var(--cor-dark);
-  border-radius: 50px;
-  margin: 8px 0;
-  box-shadow: -5px 5px 0 0 var(--cor-dark);
-  outline: none;
-}
-
-.exercicio03Input::placeholder {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--cor-escura);
-}
-
-.exercicio03Input:focus {
-  box-shadow: -3px 3px 0 0 var(--cor-destaque);
-  border: solid 3px var(--cor-destaque);
-}
-
-.exercicio03FormBtn {
-  margin: 16px 0;
-  border: 0;
-  padding: 10px 20px;
-  background-color: var(--cor-dark);
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--cor-bg);
-  border-radius: 50px;
-  box-shadow: -5px 5px 0 0 var(--cor-escura);
-}
-
-.exercicio03FormBtn:hover {
-  cursor: pointer;
-  scale: 0.9;
-  box-shadow: none;
-  transition: all 200ms ease-in-out;
-}
-
 /* Exercio 04 */
 
-.exercicio04Conteudo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 300px;
-  margin: 0 auto;
-  gap: 50px;
-  width: 100%;
-}
-
-.exercicio04Form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: center;
-}
-
-.exercicio04Input {
+.tituloInternoExercicio04 {
+  font-size: 20px;
+  color: var(--cor-dark);
   margin: 16px 0;
-  width: 180px;
-  height: 30px;
-  padding: 5px 10px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--cor-escura);
-  border: solid 3px var(--cor-dark);
-  border-radius: 50px;
-  margin: 8px 0;
-  box-shadow: -5px 5px 0 0 var(--cor-dark);
-  outline: none;
-}
-
-.exercicio04Input::placeholder {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--cor-escura);
-}
-
-.exercicio04Input:focus {
-  box-shadow: -3px 3px 0 0 var(--cor-destaque);
-  border: solid 3px var(--cor-destaque);
-}
-
-.exercicio04FormBtn {
-  margin: 16px 0;
-  border: 0;
-  padding: 10px 20px;
-  background-color: var(--cor-dark);
-  font-size: 12px;
+  text-align: center;
   font-weight: 600;
-  color: var(--cor-bg);
-  border-radius: 50px;
-  box-shadow: -5px 5px 0 0 var(--cor-escura);
 }
 
-.exercicio04FormBtn:hover {
-  cursor: pointer;
-  scale: 0.9;
-  box-shadow: none;
-  transition: all 200ms ease-in-out;
+.subtituloInternoExercicio04 {
+  font-size: 16px;
+  color: var(--cor-escura);
+  text-decoration: line-through;
+  font-weight: 500;
+  margin: 8px 0;
 }
 
 /* Exercicio 05 */
 
-.exercicio05Conteudo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 300px;
-  margin: 0 auto;
-  gap: 50px;
-  width: 100%;
-}
-
-.exercicio05Form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: center;
-}
-
-.exercicio05Input {
-  margin: 16px 0;
-  width: 190px;
-  height: 30px;
-  padding: 5px 10px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--cor-escura);
-  border: solid 3px var(--cor-dark);
-  border-radius: 50px;
-  margin: 8px 0;
-  box-shadow: -5px 5px 0 0 var(--cor-dark);
-  outline: none;
-}
-
-.exercicio05Input::placeholder {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--cor-escura);
-}
-
-.exercicio05Input:focus {
-  box-shadow: -3px 3px 0 0 var(--cor-destaque);
-  border: solid 3px var(--cor-destaque);
-}
-
-.exercicio05FormBtn {
-  margin: 16px 0;
-  border: 0;
-  padding: 10px 20px;
-  background-color: var(--cor-dark);
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--cor-bg);
-  border-radius: 50px;
-  box-shadow: -5px 5px 0 0 var(--cor-escura);
-}
-
-.exercicio05FormBtn:hover {
-  cursor: pointer;
-  scale: 0.9;
-  box-shadow: none;
-  transition: all 200ms ease-in-out;
-}
-
 /* Exercicio 06*/
-
-.exercicio06Conteudo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 300px;
-  margin: 0 auto;
-  gap: 50px;
-  width: 100%;
-}
-
-.exercicio06Form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: center;
-}
-
 .exercicio06Input {
-  margin: 16px 0;
-  width: 210px;
-  height: 30px;
-  padding: 5px 10px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--cor-escura);
-  border: solid 3px var(--cor-dark);
-  border-radius: 50px;
-  margin: 8px 0;
-  box-shadow: -5px 5px 0 0 var(--cor-dark);
-  outline: none;
-}
-
-.exercicio06Input::placeholder {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--cor-escura);
-}
-
-.exercicio06Input:focus {
-  box-shadow: -3px 3px 0 0 var(--cor-destaque);
-  border: solid 3px var(--cor-destaque);
-}
-
-.exercicio06FormBtn {
-  margin: 16px 0;
-  border: 0;
-  padding: 10px 20px;
-  background-color: var(--cor-dark);
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--cor-bg);
-  border-radius: 50px;
-  box-shadow: -5px 5px 0 0 var(--cor-escura);
-}
-
-.exercicio06FormBtn:hover {
-  cursor: pointer;
-  scale: 0.9;
-  box-shadow: none;
-  transition: all 200ms ease-in-out;
+  width: 220px;
 }
 
 /* Exercicio 07 */
 
-.exercicio07Conteudo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 300px;
-  margin: 0 auto;
-  gap: 50px;
-  width: 100%;
-}
-
-.exercicio07Form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: center;
-}
-
-.exercicio07Input {
-  margin: 16px 0;
-  width: 210px;
-  height: 30px;
-  padding: 5px 10px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--cor-escura);
-  border: solid 3px var(--cor-dark);
-  border-radius: 50px;
-  margin: 8px 0;
-  box-shadow: -5px 5px 0 0 var(--cor-dark);
-  outline: none;
-}
-
-.exercicio07Input::placeholder {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--cor-escura);
-}
-
-.exercicio07Input:focus {
-  box-shadow: -3px 3px 0 0 var(--cor-destaque);
-  border: solid 3px var(--cor-destaque);
-}
-
-.exercicio07FormBtn {
-  margin: 16px 0;
-  border: 0;
-  padding: 10px 20px;
-  background-color: var(--cor-dark);
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--cor-bg);
-  border-radius: 50px;
-  box-shadow: -5px 5px 0 0 var(--cor-escura);
-}
-
-.exercicio07FormBtn:hover {
-  cursor: pointer;
-  scale: 0.9;
-  box-shadow: none;
-  transition: all 200ms ease-in-out;
-}
-
 /* Exercício 08*/
 
-.exercicio08Conteudo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 300px;
-  margin: 0 auto;
-  gap: 50px;
-  width: 100%;
-}
+/* Exercício 09*/
 
-.exercicio08Form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: center;
-}
+/* Exercício 10 */
 
-.exercicio08Input {
+/* Exercício 11 */
+
+/* Exercício 12 */
+
+/* Exercício 13 */
+
+/* Exercício 14 */
+
+/* Exercício 15 */
+
+.mensagemExercicio15 {
   margin: 16px 0;
-  width: 210px;
-  height: 30px;
-  padding: 5px 10px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--cor-escura);
-  border: solid 3px var(--cor-dark);
-  border-radius: 50px;
-  margin: 8px 0;
-  box-shadow: -5px 5px 0 0 var(--cor-dark);
-  outline: none;
-}
-
-.exercicio08Input::placeholder {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--cor-escura);
-}
-
-.exercicio08Input:focus {
-  box-shadow: -3px 3px 0 0 var(--cor-destaque);
-  border: solid 3px var(--cor-destaque);
-}
-
-.exercicio08FormBtn {
-  margin: 16px 0;
-  border: 0;
-  padding: 10px 20px;
-  background-color: var(--cor-dark);
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--cor-bg);
-  border-radius: 50px;
-  box-shadow: -5px 5px 0 0 var(--cor-escura);
-}
-
-.exercicio08FormBtn:hover {
-  cursor: pointer;
-  scale: 0.9;
-  box-shadow: none;
-  transition: all 200ms ease-in-out;
 }
