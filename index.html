@@ -151,7 +151,7 @@
         Crie um programa que gera os primeiros N termos da série Fibonacci, onde N é fornecido pelo usuário.
       </dd>
 
-      <!-- <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio22">Exercício 22-Média de Notas:</a></dt>
+      <dt class="exercicioTitulo"><a class="linkVer" href="#exercicio22">Exercício 22-Média de Notas:</a></dt>
       <dd class="exercicioTexto">
         Faça um programa que solicita ao usuário que insira as notas de alunos em uma disciplina e calcula a média
         dessas notas. O programa deve continuar pedindo notas até que o usuário decida parar.
@@ -179,7 +179,7 @@
       <dd class="exercicioTexto">
         Desenvolva um programa que pede ao usuário para inserir as notas e os pesos de várias disciplinas e calcula a
         média ponderada.
-      </dd> -->
+      </dd>
 
       <hr class="detalheInicio">
     </dl>
@@ -725,6 +725,126 @@
       <a class="linkVoltar" href="#questionario">⬆️</a>
     </div>
 
+    <div id="exercicio22" class="exercicioBox exercicio22">
+
+      <h2 class="tituloExercicio exercicio22Titulo">Exercício 22-Média de Notas:</h2>
+
+      <div class="exercicioConteudo exercicio22Conteudo">
+        <form id="exercicio22Form" class="exercicioForm exercicio22Form">
+
+          <label for="numeroInteiro" class="exercicioLabel exercicio22Label">Notas:<br/>(Utilize "." ao invés de ",")</label>
+          <input type="number" name="numeroInteiro" id="notaExercicio22"
+            class="exercicioInput exercicio22Input inputNome" placeholder="Numero Inteiro positivo" min="1">
+
+          <button type="button" id="exercicio22FormBtn" class="exercicioFormBtn exercicio22FormBtn">Média</button>
+        </form>
+
+        <div class="resultadoTextos resultado22Textos">
+          <h3 class="resultadoTitulo resultado22Titulo">Resultado: </h3>
+          <div id="exercicio22resultado" class="exercicioResultado exercicio22resultado"></div>
+        </div>
+      </div>
+      <a class="linkVoltar" href="#questionario">⬆️</a>
+    </div>
+
+    <div id="exercicio23" class="exercicioBox exercicio23">
+
+      <h2 class="tituloExercicio exercicio23Titulo">Exercício 23-Jogo de Adivinhação:</h2>
+
+      <div class="exercicioConteudo exercicio23Conteudo">
+        <form id="exercicio23Form" class="exercicioForm exercicio23Form">
+
+          <label for="chute" class="exercicioLabel exercicio23Label">Adivinhe o Número de 1 a 100<br /><span
+              id="mensagemExercicio23" class="mensagemExercicio23">Qual o seu Chute ?</span> </label>
+          <input type="number" name="chute" id="exercicio23chute" class="exercicioInput exercicio23Input inputAno"
+            placeholder="Chute!">
+
+          <button type="button" id="exercicio23FormBtn" class="exercicioFormBtn exercicio23FormBtn">Verificar</button>
+        </form>
+
+        <div class="resultadoTextos resultado23Textos">
+          <h3 class="resultadoTitulo resultado23Titulo"></h3>
+          <p id="exercicio23resultado" class="exercicioResultado exercicio23resultado"></p>
+        </div>
+      </div>
+
+      <a class="linkVoltar" href="#questionario">⬆️</a>
+    </div>
+
+    <div id="exercicio24" class="exercicioBox exercicio24">
+
+      <h2 class="tituloExercicio exercicio24Titulo">Exercício 24-Contador de Dígitos:</h2>
+
+      <div class="exercicioConteudo exercicio24Conteudo">
+        <form id="exercicio24Form" class="exercicioForm exercicio24Form">
+
+          <label for="chute" class="exercicioLabel exercicio24Label">Digite um Número Inteiro </label>
+          <input type="number" name="chute" id="exercicio24numero" class="exercicioInput exercicio24Input inputAno"
+            placeholder="Número Inteiro">
+
+          <button type="button" id="exercicio24FormBtn" class="exercicioFormBtn exercicio24FormBtn">Resetar</button>
+        </form>
+
+        <div class="resultadoTextos resultado24Textos">
+          <h3 class="resultadoTitulo resultado24Titulo">Digitos:</h3>
+          <p id="exercicio24resultado" class="exercicioResultado exercicio24resultado"></p>
+        </div>
+      </div>
+
+      <a class="linkVoltar" href="#questionario">⬆️</a>
+    </div>
+
+    <div id="exercicio25" class="exercicioBox exercicio25">
+
+      <h2 class="tituloExercicio exercicio25Titulo">Exercício 25-Números Pares e Ímpares:</h2>
+
+      <div class="exercicioConteudo exercicio25Conteudo">
+        <form id="exercicio25Form" class="exercicioForm exercicio25Form">
+
+          <label for="chute" class="exercicioLabel exercicio25Label">Digite um Número Inteiro </label>
+          <input type="number" name="chute" id="exercicio25numero" class="exercicioInput exercicio25Input inputAno"
+            placeholder="Número Inteiro">
+
+          <button type="button" id="exercicio25FormBtn" class="exercicioFormBtn exercicio25FormBtn">Consultar</button>
+        </form>
+
+        <div class="resultadoTextos resultado25Textos">
+          <h3 class="resultadoTitulo resultado25Titulo">Numeros Impares e Pares:</h3>
+          <div id="exercicio25resultado" class="exercicioResultado exercicio25resultado"></div>
+        </div>
+      </div>
+
+      <a class="linkVoltar" href="#questionario">⬆️</a>
+    </div>
+
+    <div id="exercicio26" class="exercicioBox exercicio26">
+
+      <h2 class="tituloExercicio exercicio26Titulo">Exercício 26-Cálculo de Média Ponderada:</h2>
+
+      <div class="exercicioConteudo exercicio26Conteudo">
+        <form id="exercicio26Form" class="exercicioForm exercicio26Form">
+
+          <label for="notaExercicio26" class="exercicioLabel exercicio26Label">Digite a Nota </label>
+          <input type="number" name="notaExercicio26" id="exercicio26nota" class="exercicioInput exercicio26Input inputAno"
+            placeholder="Nota" min="0">
+          <label for="pesoExercicio26" class="exercicioLabel exercicio26Label">Digite o Peso </label>
+          <input type="number" name="pesoExercicio26" id="exercicio26Peso" class="exercicioInput exercicio26Input inputPeso"
+            placeholder="Peso" min="0">
+          <div class="botoesExercicio26">
+            <button type="button" id="exercicio26FormBtn" class="exercicioFormBtn exercicio26FormBtn">Calcular</button>
+            <button type="button" id="exercicio26FormBtn2" class="exercicioFormBtn exercicio26FormBtn">resetar</button>
+          </div>
+        </form>
+
+        <div class="resultadoTextos resultado26Textos">
+          <h3 class="resultadoTitulo resultado26Titulo">Média Ponderada:</h3>
+          <div id="exercicio26resultado" class="exercicioResultado exercicio26resultado"></div>
+        </div>
+      </div>
+
+      <a class="linkVoltar" href="#questionario">⬆️</a>
+    </div>
+
   </section>
 
   <script src="./exercicio01.js"></script>
@@ -748,6 +868,11 @@
   <script src="./exercicio19.js"></script>
   <script src="./exercicio20.js"></script>
   <script src="./exercicio21.js"></script>
+  <script src="./exercicio22.js"></script>
+  <script src="./exercicio23.js"></script>
+  <script src="./exercicio24.js"></script>
+  <script src="./exercicio25.js"></script>
+  <script src="./exercicio26.js"></script>
 
 </body>
 
