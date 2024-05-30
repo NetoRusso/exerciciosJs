@@ -116,6 +116,15 @@ body {
   color: var(--cor-escura);
 }
 
+.descricaoExercicio {
+  width: 80%;
+  min-width: 280px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--cor-escura);
+  margin: 16px 0;
+}
+
 .exercicioBox{
   width: 100%;
   min-height: 50vh;
