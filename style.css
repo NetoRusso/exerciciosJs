@@ -65,19 +65,29 @@ body {
   gap: 16px;
 }
 
+.exercicioTitulo {
+  width: 90%;
+  min-width: 320px;
+  height: auto;
+  min-height: 50px;
+  border-radius: 50px;
+  margin: 8px 0;
+  padding: 10px 15px;
+  background-color: var(--cor-medio);
+  box-shadow: -5px 5px 5px 0px var(--cor-escura);
+}
+
 .linkVer {
   text-decoration: none;
   font-size: var(--texto-2);
-  font-weight: 600;
-  padding: 5px 10px;
-  background-color: var(--cor-dark);
-  color: var(--cor-bg);
-  border-radius: 50px;
-  margin: 8px 0;
-  box-shadow: inset 3px 3px 5px 5px var(--cor-dark), -5px 5px 5px 2px var(--cor-escura);
+  font-weight: 800;
+  line-height: 2;
+  color: var(--cor-escura);
+  text-align: center;
+
 }
 
-.linkVer:hover {
+.exercicioTitulo:hover {
   scale: 0.9;
   box-shadow: -2px 2px 3px 0px var(--cor-escura);
   transition: all 200ms ease-in-out;
@@ -118,7 +128,7 @@ body {
 
 .descricaoExercicio {
   width: 80%;
-  min-width: 280px;
+  min-width: 20px;
   font-size: 14px;
   font-weight: 500;
   color: var(--cor-escura);
