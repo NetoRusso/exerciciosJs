@@ -18,7 +18,7 @@ function contagemRegressivaExercicio40(tempo) {
       contagemRegressivaExercicio40(tempo - 1);
     }, 1000);
   } else {
-    resultadoExercicio40.innerHTML = `<p style="font-size: 24px; font-weight: 600;"> Tempo esgotado!</p>`;
+    resultadoExercicio40.innerHTML = `<p style="font-size: 20px; font-weight: 600;"> Tempo esgotado!</p>`;
     btnExercicio40Input.style.display = "block";
   }
 }
