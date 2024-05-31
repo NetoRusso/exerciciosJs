@@ -7,6 +7,7 @@ console.log("Exercício 22 OK");
 const formularioExercicio22 = document.getElementById("exercicio22Form");
 const notaExercicio22Input =document.getElementById("notaExercicio22");
 const btnExercicio22 = document.getElementById("exercicio22FormBtn");
+const btnExercicio22Limpar = document.getElementById("exercicio22FormBtnReset");
 const resultadoExercicio22 = document.getElementById("exercicio22resultado");
 
 let notasCopiladas = [];
@@ -27,7 +28,16 @@ btnExercicio22.addEventListener("click", (e) => {
       soma += notasCopiladas[i];
     }
     let media = soma / notasCopiladas.length;
-    resultadoExercicio22.innerHTML = `<p>Notas:✨${notasCopiladas}🌟</p> <p>A média das notas é:👍${media.toFixed(2)}👍</p>`;
+    resultadoExercicio22.innerHTML = `<p>Notas:✨${notasCopiladas.join(", ")}🌟</p> <p>A média das notas é:👍${media.toFixed(2)}👍</p>`;
   }
+})
+
+btnExercicio22Limpar.addEventListener("click", (e) => {
+  e.preventDefault();
+
+notasCopiladas = [];
+resultadoExercicio22.innerHTML = "";
+formularioExercicio22.reset();
+
 })
 
