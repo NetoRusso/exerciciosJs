@@ -336,3 +336,31 @@ body {
 /* Exercício 32 */
 
 /* Exercício 33 */
+
+/* Exercício 34 */
+.botoesExercicio34 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Exercício 35 */
+
+/* Exercício 36 */
+.inputCaractere {
+  width: 45px;
+}
+
+.botoesExercicio36{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Exercício 37 */
+
+/* Exercício 38 */
+
+/* Exercício 39 */
+
+/* Exercício 40 */
