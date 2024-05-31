@@ -946,7 +946,10 @@
             ",")</label>
           <input type="number" name="numeroInteiro" id="notaExercicio22"
             class="exercicioInput exercicio22Input inputNome" placeholder="Numero Inteiro positivo" min="1">
-          <button type="button" id="exercicio22FormBtn" class="exercicioFormBtn exercicio22FormBtn">Média</button>
+            <div class="botoesExercicio22">
+              <button type="button" id="exercicio22FormBtn" class="exercicioFormBtn exercicio22FormBtn">Média</button>
+              <button type="button" id="exercicio22FormBtnReset" class="exercicioFormBtn exercicio22FormBtn">Limpar</button>
+            </div>
         </form>
         <div class="resultadoTextos resultado22Textos">
           <h3 class="resultadoTitulo resultado22Titulo">Resultado: </h3>
@@ -1308,7 +1311,6 @@
       </div>
       <a class="linkVoltar" href="#questionario">⬆️</a>
     </div>
-
     <div id="exercicio40" class="exercicioBox exercicio40">
       <h2 class="tituloExercicio exercicio40Titulo">Exercício 40-Função Recursiva:</h2>
       <p class="descricaoExercicio">- Crie uma função chamada `contagemRegressiva` que receba um número como argumento e exiba uma contagem regressiva a partir desse número até 0, usando recursão.</p>
@@ -1327,6 +1329,168 @@
       </div>
       <a class="linkVoltar" href="#questionario">⬆️</a>
     </div>
+    <div id="exercicio41" class="exercicioBox exercicio41">
+      <h2 class="tituloExercicio exercicio41Titulo">Exercício 41-Função para Calcular Fibonacci:</h2>
+      <p class="descricaoExercicio">- Crie uma função chamada `fibonacci` que receba um número `n` como argumento e retorne o `n`-ésimo número da sequência de Fibonacci.</p>
+      <div class="exercicioConteudo exercicio41Conteudo">
+        <form action="submit" id="exercicio41Form" class="exercicioForm exercicio41Form">
+          <label for="numeroExercicio41" class="exercicioLabel exercicio41Label">Digite a quantidade</label>
+          <input type="number" name="numeroExercicio41" id="exercicio41numero"
+            class="exercicioInput exercicio41Input inputNumero" placeholder="Numero de Termos:" required>
+          <button type="submit" id="exercicio41FormBtn" class="exercicioFormBtn exercicio41FormBtn">Contar</button>
+        </form>
+        <div class="resultadoTextos resultado41Textos">
+          <h3 class="resultadoTitulo resultado41Titulo">Fibonacci:</h3>
+          <div id="exercicio41resultado" class="exercicioResultado exercicio41resultado"></div>
+        </div>
+      </div>
+      <a class="linkVoltar" href="#questionario">⬆️</a>
+    </div>
+    <div id="exercicio42" class="exercicioBox exercicio42">
+      <h2 class="tituloExercicio exercicio42Titulo">Exercício 42-Função para Converter Celsius em Fahrenheit:</h2>
+      <p class="descricaoExercicio">- Crie uma função chamada `celsiusParaFahrenheit` que receba uma temperatura em Celsius e retorne a temperatura convertida para Fahrenheit.</p>
+      <div class="exercicioConteudo exercicio42Conteudo">
+        <form action="submit" id="exercicio42Form" class="exercicioForm exercicio42Form">
+          <label for="numeroExercicio42" class="exercicioLabel exercicio42Label">Digite a Temperatura em Celsius<br/>(Use "." ao invés de ",")</label>
+          <input type="text" name="numeroExercicio42" id="exercicio42numero"
+            class="exercicioInput exercicio42Input inputTemperatura" placeholder="Temperatura em Celsius:" required>
+
+          <button type="submit" id="exercicio42FormBtn" class="exercicioFormBtn exercicio42FormBtn">Converter</button>
+        </form>
+        <div class="resultadoTextos resultado42Textos">
+          <h3 class="resultadoTitulo resultado42Titulo">Temperatura em Fahrenheit:</h3>
+          <div id="exercicio42resultado" class="exercicioResultado exercicio42resultado"></div>
+        </div>
+      </div>
+      <a class="linkVoltar" href="#questionario">⬆️</a>
+    </div>
+    <div id="exercicio43" class="exercicioBox exercicio43">
+      <h2 class="tituloExercicio exercicio43Titulo">Exercício 43-Função para Converter Fahrenheit em Celsius:</h2>
+      <p class="descricaoExercicio">- Crie uma função chamada `fahrenheitParaCelsius` que receba uma temperatura em Fahrenheit e retorne a temperatura convertida para Celsius.</p>
+      <div class="exercicioConteudo exercicio43Conteudo">
+        <form action="submit" id="exercicio43Form" class="exercicioForm exercicio43Form">
+          <label for="numeroExercicio43" class="exercicioLabel exercicio43Label">Digite a Temperatura em Fahrenheit<br/>(Use "." ao invés de ",")</label>
+          <input type="text" name="numeroExercicio43" id="exercicio43numero"
+            class="exercicioInput exercicio43Input inputTemperatura" placeholder="Temperatura em Fahrenheit:" required>
+
+          <button type="submit" id="exercicio43FormBtn" class="exercicioFormBtn exercicio43FormBtn">Converter</button>
+        </form>
+        <div class="resultadoTextos resultado43Textos">
+          <h3 class="resultadoTitulo resultado43Titulo">Temperatura em Celsius:</h3>
+          <div id="exercicio43resultado" class="exercicioResultado exercicio43resultado"></div>
+        </div>
+      </div>
+      <a class="linkVoltar" href="#questionario">⬆️</a>
+    </div>
+    <div id="exercicio44" class="exercicioBox exercicio44">
+      <h2 class="tituloExercicio exercicio44Titulo">Exercício 44-Função para Verificar paridade:</h2>
+      <p class="descricaoExercicio">- Crie uma função chamada `ePar` que receba um número como argumento e retorne `true` se o número for par e `false` caso contrário.</p>
+      <div class="exercicioConteudo exercicio44Conteudo">
+        <form action="submit" id="exercicio44Form" class="exercicioForm exercicio44Form">
+          <label for="numeroExercicio44" class="exercicioLabel exercicio44Label">Digite um número</label>
+          <input type="number" name="numeroExercicio44" id="exercicio44numero"
+            class="exercicioInput exercicio44Input inputTemperatura" placeholder="Número:" required>
+
+          <button type="submit" id="exercicio44FormBtn" class="exercicioFormBtn exercicio44FormBtn">Verificar</button>
+        </form>
+        <div class="resultadoTextos resultado44Textos">
+          <h3 class="resultadoTitulo resultado44Titulo">Resultado:</h3>
+          <div id="exercicio44resultado" class="exercicioResultado exercicio44resultado"></div>
+        </div>
+      </div>
+      <a class="linkVoltar" href="#questionario">⬆️</a>
+    </div>
+    <div id="exercicio45" class="exercicioBox exercicio45">
+      <h2 class="tituloExercicio exercicio45Titulo">Exercício 45-Função para Calcular Quadrado:</h2>
+      <p class="descricaoExercicio">- Crie uma função chamada `quadrado` que receba um número como argumento e retorne o quadrado desse número.</p>
+      <div class="exercicioConteudo exercicio45Conteudo">
+        <form action="submit" id="exercicio45Form" class="exercicioForm exercicio45Form">
+          <label for="numeroExercicio45" class="exercicioLabel exercicio45Label">Digite um número</label>
+          <input type="text" name="numeroExercicio45" id="exercicio45numero"
+            class="exercicioInput exercicio45Input inputTemperatura" placeholder="Número:" required>
+
+          <button type="submit" id="exercicio45FormBtn" class="exercicioFormBtn exercicio45FormBtn">Calcular</button>
+        </form>
+        <div class="resultadoTextos resultado45Textos">
+          <h3 class="resultadoTitulo resultado45Titulo">Resultado:</h3>
+          <div id="exercicio45resultado" class="exercicioResultado exercicio45resultado"></div>
+        </div>
+      </div>
+      <a class="linkVoltar" href="#questionario">⬆️</a>
+    </div>
+    <div id="exercicio46" class="exercicioBox exercicio46">
+      <h2 class="tituloExercicio exercicio46Titulo">Exercício 46-Função para Calcular Raiz Quadrada:</h2>
+      <p class="descricaoExercicio">- Crie uma função chamada `raizQuadrada` que receba um número como argumento e retorne a raiz quadrada desse número.</p>
+      <div class="exercicioConteudo exercicio46Conteudo">
+        <form action="submit" id="exercicio46Form" class="exercicioForm exercicio46Form">
+          <label for="numeroExercicio46" class="exercicioLabel exercicio46Label">Digite um número</label>
+          <input type="text" name="numeroExercicio46" id="exercicio46numero"
+            class="exercicioInput exercicio46Input inputTemperatura" placeholder="Número:" required>
+          <button type="submit" id="exercicio46FormBtn" class="exercicioFormBtn exercicio46FormBtn">Calcular</button>
+        </form>
+        <div class="resultadoTextos resultado46Textos">
+          <h3 class="resultadoTitulo resultado46Titulo">Resultado:</h3>
+          <div id="exercicio46resultado" class="exercicioResultado exercicio46resultado"></div>
+        </div>
+      </div>
+      <a class="linkVoltar" href="#questionario">⬆️</a>
+    </div>
+    <div id="exercicio47" class="exercicioBox exercicio47">
+      <h2 class="tituloExercicio exercicio47Titulo">Exercício 47-Função para Contar as vogais:</h2>
+      <p class="descricaoExercicio">- Crie uma função chamada `contarVogais` que receba uma string como argumento e retorne o número de vogais na string.</p>
+      <div class="exercicioConteudo exercicio47Conteudo">
+        <form action="submit" id="exercicio47Form" class="exercicioForm exercicio47Form">
+          <label for="numeroExercicio47" class="exercicioLabel exercicio47Label">Digite o texto</label>
+          <input type="text" name="numeroExercicio47" id="exercicio47texto"
+            class="exercicioInput exercicio47Input inputTemperatura" placeholder="Texto:" required>
+
+          <button type="submit" id="exercicio47FormBtn" class="exercicioFormBtn exercicio47FormBtn">Contar</button>
+        </form>
+        <div class="resultadoTextos resultado47Textos">
+          <h3 class="resultadoTitulo resultado47Titulo">Resultado:</h3>
+          <div id="exercicio47resultado" class="exercicioResultado exercicio47resultado"></div>
+        </div>
+      </div>
+      <a class="linkVoltar" href="#questionario">⬆️</a>
+    </div>
+
+    <div id="exercicio48" class="exercicioBox exercicio48">
+      <h2 class="tituloExercicio exercicio48Titulo">Exercício 48-Função para Verificar Palíndromo:</h2>
+      <p class="descricaoExercicio">- Crie uma função chamada `ePalindromo` que receba uma string como argumento e retorne `true` se a string for um palíndromo e `false` caso contrário.</p>
+      <div class="exercicioConteudo exercicio48Conteudo">
+        <form action="submit" id="exercicio48Form" class="exercicioForm exercicio48Form">
+          <label for="numeroExercicio48" class="exercicioLabel exercicio48Label">Digite o texto</label>
+          <input type="text" name="numeroExercicio48" id="exercicio48texto"
+            class="exercicioInput exercicio48Input inputTemperatura" placeholder="Texto:" required>
+
+          <button type="submit" id="exercicio48FormBtn" class="exercicioFormBtn exercicio48FormBtn">Contar</button>
+        </form>
+        <div class="resultadoTextos resultado48Textos">
+          <h3 class="resultadoTitulo resultado48Titulo">Resultado:</h3>
+          <div id="exercicio48resultado" class="exercicioResultado exercicio48resultado"></div>
+        </div>
+      </div>
+      <a class="linkVoltar" href="#questionario">⬆️</a>
+    </div>
+<!-- 
+    <div id="exercicio49" class="exercicioBox exercicio49">
+      <h2 class="tituloExercicio exercicio49Titulo">Exercício 49-Função para Encontrar o Maior Número em um Array:</h2>
+      <p class="descricaoExercicio">- Crie uma função chamada `maiorNumero` que receba um array de números como argumento e retorne o maior número do array.</p>
+      <div class="exercicioConteudo exercicio49Conteudo">
+        <form action="submit" id="exercicio49Form" class="exercicioForm exercicio49Form">
+          <label for="numeroExercicio49" class="exercicioLabel exercicio49Label">Digite o texto</label>
+          <input type="text" name="numeroExercicio49" id="exercicio49texto"
+            class="exercicioInput exercicio49Input inputTemperatura" placeholder="Texto:" required>
+
+          <button type="submit" id="exercicio49FormBtn" class="exercicioFormBtn exercicio49FormBtn">Contar</button>
+        </form>
+        <div class="resultadoTextos resultado49Textos">
+          <h3 class="resultadoTitulo resultado49Titulo">Resultado:</h3>
+          <div id="exercicio49resultado" class="exercicioResultado exercicio49resultado"></div>
+        </div>
+      </div>
+      <a class="linkVoltar" href="#questionario">⬆️</a>
+    </div> -->
 
   </section>
 
@@ -1370,6 +1534,14 @@
   <script src="./Script/exercicio38.js"></script>
   <script src="./Script/exercicio39.js"></script>
   <script src="./Script/exercicio40.js"></script>
+  <script src="./Script/exercicio41.js"></script>
+  <script src="./Script/exercicio42.js"></script>
+  <script src="./Script/exercicio43.js"></script>
+  <script src="./Script/exercicio44.js"></script>
+  <script src="./Script/exercicio45.js"></script>
+  <script src="./Script/exercicio46.js"></script>
+  <script src="./Script/exercicio47.js"></script>
+  <script src="./Script/exercicio48.js"></script>
 
 </body>
 
