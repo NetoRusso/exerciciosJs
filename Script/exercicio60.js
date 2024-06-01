@@ -112,6 +112,7 @@ btnExercicio60Ordenar.addEventListener("click", (e) => {
 
 btnExercicio60Reset.addEventListener("click", (e) => {
   e.preventDefault();
+  tituloDisplayExercicio60.textContent = `Lista Original`;
+  clickExercicio60 = 0;
 
-console.log("Resetou");
 })
