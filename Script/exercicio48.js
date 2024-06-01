@@ -11,7 +11,7 @@ const resultadoExercicio48 = document.getElementById("exercicio48resultado");
 function ePalindromoExercicio48(a) {
   let textoNormalizado = a.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
   let textoInvertido = textoNormalizado.split('').reverse().join('');
-  console.log(textoNormalizado+ "  "+ textoInvertido);
+  // console.log(textoNormalizado+ "  "+ textoInvertido);
   return textoNormalizado === textoInvertido;
 }
 
