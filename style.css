@@ -2,11 +2,11 @@
 
 :root {
   --font-padrao: "Roboto", sans-serif;
-  --cor-bg: #ffe1bd;
-  --cor-medio: #ebb97c;
-  --cor-destaque: #cb8026;
-  --cor-dark: #232533;
-  --cor-escura: #393b47;
+  --cor-destaque: #5EC737;
+  --cor-dark: #101923;
+  --cor-escura: #1A1D26;
+  --cor-clara: #f5f6fb;
+  --cor-media-2: #ACB3C3;
 
   --titulo-1: clamp(1.5rem, 1.3846rem + 0.5128vw, 2rem);
   --titulo-2: clamp(1.25rem, 1.1346rem + 0.5128vw, 1.75rem);
@@ -34,7 +34,7 @@ html {
 
 body {
   width: 100%;
-  background-color: var(--cor-bg);
+  background-color: var(--cor-dark);
 }
 
 .questionario {
@@ -49,13 +49,13 @@ body {
 .questionarioTitulo {
   font-size: var(--titulo-1);
   font-weight: 800;
-  color: var(--cor-dark);
+  color: var(--cor-media-2);
 }
 
 .questionarioSubtitulo {
   font-style: var(--titulo-2);
   font-weight: 600;
-  color: var(--cor-escura);
+  color: var(--cor-clara);
 }
 
 .questionarioExercicio {
@@ -74,13 +74,13 @@ body {
   font-size: var(--texto-2);
   font-weight: 800;
   line-height: 2;
-  color: var(--cor-escura);
+  color: var(--cor-media-2);
   text-align: center;
   border-radius: 50px;
   margin: 8px 0;
   padding: 10px 15px;
-  background-color: var(--cor-medio);
-  box-shadow: -5px 5px 5px 0px var(--cor-escura);
+  background-color: var(--cor-dark);
+  box-shadow: -5px 5px 5px 0px var(--cor-destaque);
 
 }
 
@@ -94,19 +94,20 @@ body {
   font-size: var(--texto-2);
   font-weight: 500;
   line-height: 1.5;
+  color: var(--cor-clara);
 }
 
 .questionarioSubtituloInterno {
   font-size: var(--titulo-2);
   font-weight: 600;
-  color: var(--cor-escura);
+  color: var(--cor-clara);
   margin: 16px 0;
 }
 
 .detalheInicio {
   width: 100%;
   height: 5px;
-  background-color: #cb8026;
+  background-color: var(--cor-destaque);
   border-radius: 50px;
   margin: 16px 0;
 }
@@ -120,7 +121,7 @@ body {
 .tituloExercicio {
   font-size: var(--titulo-2);
   font-weight: 600;
-  color: var(--cor-escura);
+  color: var(--cor-clara);
 }
 
 .descricaoExercicio {
@@ -128,7 +129,7 @@ body {
   min-width: 20px;
   font-size: 14px;
   font-weight: 500;
-  color: var(--cor-escura);
+  color: var(--cor-clara);
   margin: 16px 0;
 }
 
@@ -154,26 +155,28 @@ body {
 
 .exercicioLabel {
   font-size: 16px;
-  color: var(--cor-dark);
+  color: var(--cor-clara);
   font-weight: 600;
   line-height: 1.5;
 }
 
 .resultadoTitulo {
   font-size: 16px;
-  color: var(--cor-escura);
+  color: var(--cor-clara);
   font-weight: 600;
 }
 
 .exercicioResultado {
   font-size: 14px;
   font-weight: 600;
-  color: var(--cor-dark);
+  color: var(--cor-clara);
 }
 
 .linkVoltar {
   position: absolute;
   bottom: 5px;
+  left: 10px;
+  align-self: flex-start;
 }
 
 .exercicioForm {
@@ -191,18 +194,18 @@ body {
   padding: 5px 10px;
   font-size: 12px;
   font-weight: 500;
-  color: var(--cor-escura);
-  border: solid 3px var(--cor-dark);
+  color: var(--cor-dark);
+  border: solid 3px var(--cor-escura);
   border-radius: 50px;
   margin: 8px 0;
-  box-shadow: -5px 5px 0 0 var(--cor-dark);
+  box-shadow: -5px 5px 0 0 var(--cor-escura);
   outline: none;
 }
 
 .exercicioInput::placeholder {
   font-size: 12px;
   font-weight: 500;
-  color: var(--cor-escura);
+  color: var(--cor-dark);
 }
 
 .exercicioInput:focus {
@@ -214,12 +217,12 @@ body {
   margin: 16px 0;
   border: 0;
   padding: 10px 20px;
-  background-color: var(--cor-dark);
+  background-color: var(--cor-escura);
   font-size: 12px;
   font-weight: 600;
-  color: var(--cor-bg);
+  color: var(--cor-clara);
   border-radius: 50px;
-  box-shadow: -5px 5px 0 0 var(--cor-escura);
+  box-shadow: -5px 5px 0 0 var(--cor-destaque);
 }
 
 
@@ -245,6 +248,7 @@ body {
   width: auto;
   max-width: 300px;
   font-size: 12px;
+  color: var(--cor-clara);
 }
 
 /* Exercicio 03 */
@@ -253,7 +257,7 @@ body {
 
 .tituloInternoExercicio04 {
   font-size: 20px;
-  color: var(--cor-dark);
+  color: var(--cor-clara);
   margin: 16px 0;
   text-align: center;
   font-weight: 600;
@@ -261,7 +265,7 @@ body {
 
 .subtituloInternoExercicio04 {
   font-size: 16px;
-  color: var(--cor-escura);
+  color: var(--cor-clara);
   text-decoration: line-through;
   font-weight: 500;
   margin: 8px 0;
