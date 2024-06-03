@@ -32,7 +32,7 @@ btnExercicio09.addEventListener("click", (e) => {
 
       break;
 
-    case "mutiplicar":
+    case "multiplicar":
       resultado = (numero01Exercicio09 * numero02Exercicio09);
 
       break;
